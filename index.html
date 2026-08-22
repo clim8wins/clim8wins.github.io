@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clim8Wins</title>
+<meta name="description" content="Tracking measurable progress in the fight against climate change. Daily posts from @clim8wins on Instagram, linked to their sources.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --c8-canopy:#33421F; --c8-paper:#F7FBF4; --c8-mist:#C9EAD3; --c8-sage:#5E6E56; --c8-alpine:#4C9C82; --c8-solar:#F4B92D; --c8-spring:#82EC5F;
+    --font-mono: "IBM Plex Mono", monospace;
+    --font-heading: "Quicksand", sans-serif;
+    --font-body: "Inter", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--c8-paper); color: var(--c8-canopy); font-family: var(--font-body); }
+
+  header { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 24px; background-color: color-mix(in srgb, var(--c8-paper) 92%, transparent); backdrop-filter: blur(6px); }
+  .logo-link { display: flex; align-items: center; gap: 8px; text-decoration: none; }
+  .logo-text { font-family: var(--font-heading); font-weight: 700; font-size: 16px; letter-spacing: 0.08em; color: var(--c8-canopy); }
+  .follow-btn { display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; font-family: var(--font-mono); font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; background-color: var(--c8-solar); color: var(--c8-canopy); border-radius: 4px; transition: transform 0.15s ease-out; }
+  .follow-btn:hover { transform: translateY(-1px); }
+
+  .intro { max-width: 768px; margin: 0 auto; padding: 40px 24px 32px; }
+  .label-chip { display: inline-flex; align-items: center; border-radius: 999px; padding: 4px 12px; font-family: var(--font-mono); font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; background-color: var(--c8-mist); color: var(--c8-canopy); }
+  h1 { margin: 16px 0 0; font-family: var(--font-heading); font-weight: 700; font-size: 34px; line-height: 1.15; }
+  .intro p { margin: 12px 0 0; max-width: 65ch; font-size: 16px; line-height: 1.6; color: var(--c8-sage); }
+  hr.dashed { border: none; border-top: 3px dashed var(--c8-canopy); margin-top: 32px; }
+
+  main { max-width: 1024px; margin: 0 auto; padding: 0 24px 40px; }
+  .story-article { padding-top: 40px; }
+  .metabar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0; font-family: var(--font-mono); font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--c8-sage); }
+  .metabar-item { display: flex; align-items: center; gap: 8px; }
+  .metabar .dot { opacity: 0.4; }
+  .story-headline { margin: 12px 0 0; font-family: var(--font-heading); font-weight: 700; font-size: 26px; line-height: 1.2; }
+
+  .slide-row { margin-top: 24px; display: flex; gap: 12px; overflow-x: auto; padding-bottom: 8px; scroll-snap-type: x mandatory; }
+  .slide-img { height: auto; width: 55%; flex: none; scroll-snap-align: center; object-fit: cover; border-radius: 4px; }
+  @media (min-width: 768px) {
+    .slide-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; overflow: visible; }
+    .slide-img { width: 100%; }
+  }
+
+  .sources-block { margin-top: 24px; }
+  .sources-label { margin: 0; font-family: var(--font-mono); font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--c8-sage); }
+  .sources-ul { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 20px; }
+  .source-link { font-size: 16px; color: var(--c8-alpine); text-decoration: underline; text-decoration-color: var(--c8-alpine); text-underline-offset: 4px; }
+  .source-link:hover { opacity: 0.8; }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="#top" class="logo-link">
+    <svg viewBox="0 0 100 100" width="26" height="26" role="img" aria-label="Clim8Wins sunburst mark"><circle cx="50" cy="50" r="14" fill="none" stroke="var(--c8-canopy)" stroke-width="4"></circle><line x1="72.0" y1="50.0" x2="84.0" y2="50.0" stroke="var(--c8-canopy)" stroke-width="4" stroke-linecap="round"></line><line x1="70.32534971902614" y1="58.4190355029115" x2="81.41190411122221" y2="63.01123668631777" stroke="var(--c8-canopy)" stroke-width="4" stroke-linecap="round"></line><line x1="65.55634920006506" y1="65.55634917214303" x2="74.04163058191874" y2="74.0416305387665" stroke="var(--c8-canopy)" stroke-width="4" stroke-linecap="round"></line><line x1="58.4190355393934" y1="70.32534970391484" x2="63.011236742698884" y2="81.41190408786838" stroke="var(--c8-canopy)" stroke-width="4" stroke-linecap="round"></line><line x1="50.00000003948772" y1="72.0" x2="50.00000006102648" y2="84.0" stroke="var(--c8-canopy)" stroke-width="4" stroke-linecap="round"></line><line x1="41.5809645335704" y1="70.32534973413743" x2="36.988763370063346" y2="81.41190413457603" stroke="var(--c8-canopy)" stroke-width="4" stroke-linecap="round"></line><line x1="34.44365085577901" y1="65.5563492279871" x2="25.95836950438574" y2="74.04163062507098" stroke="var(--c8-canopy)" stroke-width="4" stroke-linecap="round"></line><line x1="29.674650311196462" y1="58.4190355758753" x2="18.58809593548544" y2="63.01123679908001" stroke="var(--c8-canopy)" stroke-width="4" stroke-linecap="round"></line><line x1="28.0" y1="50.00000007897545" x2="16.0" y2="50.00000012205296" stroke="var(--c8-canopy)" stroke-width="4" stroke-linecap="round"></line><line x1="29.67465025075127" y1="41.5809645700523" x2="18.588095842070146" y2="36.988763426444464" stroke="var(--c8-canopy)" stroke-width="4" stroke-linecap="round"></line><line x1="34.44365074409086" y1="34.44365088370105" x2="25.958369331776783" y2="25.958369547537984" stroke="var(--c8-canopy)" stroke-width="4" stroke-linecap="round"></line><line x1="41.58096438764281" y1="29.674650326307756" x2="36.988763144538886" y2="18.58809595883926" stroke="var(--c8-canopy)" stroke-width="4" stroke-linecap="round"></line><line x1="49.99999988153684" y1="28.0" x2="49.999999816920564" y2="16.0" stroke="var(--c8-canopy)" stroke-width="4" stroke-linecap="round"></line><line x1="58.419035393465805" y1="29.674650235639977" x2="63.011236517174424" y2="18.588095818716326" stroke="var(--c8-canopy)" stroke-width="4" stroke-linecap="round"></line><line x1="65.55634908837692" y1="34.443650716168825" x2="74.04163040930979" y2="25.958369288624553" stroke="var(--c8-canopy)" stroke-width="4" stroke-linecap="round"></line><line x1="70.32534965858095" y1="41.5809643511609" x2="81.4119040178069" y2="36.98876308815776" stroke="var(--c8-canopy)" stroke-width="4" stroke-linecap="round"></line></svg>
+    <span class="logo-text">CLIM8WINS</span>
+  </a>
+  <a href="https://instagram.com/clim8wins" target="_blank" rel="noopener noreferrer" class="follow-btn">Follow on Instagram</a>
+</header>
+
+<section id="top" class="intro">
+  <span class="label-chip">Climate optimism archive</span>
+  <h1>Tracking measurable progress in the fight against climate change.</h1>
+  <p>Every story below is a daily post from @clim8wins on Instagram. Each one links back to the reporting or agency data it is built on.</p>
+  <hr class="dashed">
+</section>
+
+<main>
+<article class="story-article">
+  <p class="metabar">
+    <span class="metabar-item"><span>@CLIM8WINS</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>AUG 22, 2026</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>IUCN</span></span>
+  </p>
+  <h2 class="story-headline">World Has 124 Million Hectares Under Land Restoration — First-Ever Global Count Released at UN Land Summit</h2>
+  <div class="slide-row">
+<img src="Posts/2026-08-22/s28_slide1.png" alt="Slide 1 of 4: World Has 124 Million Hectares Under Land Restoration — First-Ever Global Count Released at UN Land Summit" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-22/s28_slide2.png" alt="Slide 2 of 4: World Has 124 Million Hectares Under Land Restoration — First-Ever Global Count Released at UN Land Summit" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-22/s28_slide3.png" alt="Slide 3 of 4: World Has 124 Million Hectares Under Land Restoration — First-Ever Global Count Released at UN Land Summit" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-22/s28_slide4.png" alt="Slide 4 of 4: World Has 124 Million Hectares Under Land Restoration — First-Ever Global Count Released at UN Land Summit" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+  </div>
+  <div class="sources-block">
+    <p class="sources-label">Sources</p>
+    <ul class="sources-ul">
+<li><a href="https://iucn.org/press-release/202608/global-land-restoration-gains-ground-delivers-only-10-national-pledges-iucn" target="_blank" rel="noopener noreferrer" class="source-link">IUCN</a></li>
+<li><a href="https://iucn.org/news/202606/india-brings-over-21-million-hectares-land-under-restoration-under-bonn-challenge" target="_blank" rel="noopener noreferrer" class="source-link">IUCN</a></li>
+    </ul>
+  </div>
+  <hr class="dashed">
+</article>
+
+<article class="story-article">
+  <p class="metabar">
+    <span class="metabar-item"><span>@CLIM8WINS</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>AUG 21, 2026</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>OFFICE OF GOVERNOR WES MOORE</span></span>
+  </p>
+  <h2 class="story-headline">Maryland Signs 20-Year Solar Deal on a Reclaimed Coal Mine</h2>
+  <div class="slide-row">
+<img src="Posts/2026-08-21/s27_slide1.png" alt="Slide 1 of 4: Maryland Signs 20-Year Solar Deal on a Reclaimed Coal Mine" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-21/s27_slide2.png" alt="Slide 2 of 4: Maryland Signs 20-Year Solar Deal on a Reclaimed Coal Mine" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-21/s27_slide3.png" alt="Slide 3 of 4: Maryland Signs 20-Year Solar Deal on a Reclaimed Coal Mine" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-21/s27_slide4.png" alt="Slide 4 of 4: Maryland Signs 20-Year Solar Deal on a Reclaimed Coal Mine" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+  </div>
+  <div class="sources-block">
+    <p class="sources-label">Sources</p>
+    <ul class="sources-ul">
+<li><a href="https://governor.maryland.gov/news/press-releases/maryland-announces-landmark-solar-energy-agreement-expected-save-300-million-while-advancing-cle" target="_blank" rel="noopener noreferrer" class="source-link">Office of Governor Wes Moore</a></li>
+<li><a href="https://www.eenews.net/articles/moore-inks-solar-deal-to-double-marylands-renewable-power-portfolio/" target="_blank" rel="noopener noreferrer" class="source-link">E&amp;E News (POLITICO)</a></li>
+    </ul>
+  </div>
+  <hr class="dashed">
+</article>
+
+<article class="story-article">
+  <p class="metabar">
+    <span class="metabar-item"><span>@CLIM8WINS</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>AUG 20, 2026</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>UN NEWS</span></span>
+  </p>
+  <h2 class="story-headline">Solar Projects Are Restoring the World&#x27;s Most Degraded Lands</h2>
+  <div class="slide-row">
+<img src="Posts/2026-08-20/s26_slide1.png" alt="Slide 1 of 4: Solar Projects Are Restoring the World&#x27;s Most Degraded Lands" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-20/s26_slide2.png" alt="Slide 2 of 4: Solar Projects Are Restoring the World&#x27;s Most Degraded Lands" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-20/s26_slide3.png" alt="Slide 3 of 4: Solar Projects Are Restoring the World&#x27;s Most Degraded Lands" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-20/s26_slide4.png" alt="Slide 4 of 4: Solar Projects Are Restoring the World&#x27;s Most Degraded Lands" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+  </div>
+  <div class="sources-block">
+    <p class="sources-label">Sources</p>
+    <ul class="sources-ul">
+<li><a href="https://news.un.org/en/story/2026/08/1168172" target="_blank" rel="noopener noreferrer" class="source-link">UN News</a></li>
+<li><a href="https://unric.org/en/un-land-conference-opens-in-mongolia-to-accelerate-global-action-on-restoration-and-resilience/" target="_blank" rel="noopener noreferrer" class="source-link">UNRIC</a></li>
+    </ul>
+  </div>
+  <hr class="dashed">
+</article>
+
+<article class="story-article">
+  <p class="metabar">
+    <span class="metabar-item"><span>@CLIM8WINS</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>AUG 19, 2026</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>CANARY MEDIA</span></span>
+  </p>
+  <h2 class="story-headline">California Crosses the 50% Solar Threshold for an Entire Month</h2>
+  <div class="slide-row">
+<img src="Posts/2026-08-19/s25_slide1.png" alt="Slide 1 of 4: California Crosses the 50% Solar Threshold for an Entire Month" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-19/s25_slide2.png" alt="Slide 2 of 4: California Crosses the 50% Solar Threshold for an Entire Month" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-19/s25_slide3.png" alt="Slide 3 of 4: California Crosses the 50% Solar Threshold for an Entire Month" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-19/s25_slide4.png" alt="Slide 4 of 4: California Crosses the 50% Solar Threshold for an Entire Month" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+  </div>
+  <div class="sources-block">
+    <p class="sources-label">Sources</p>
+    <ul class="sources-ul">
+<li><a href="https://www.canarymedia.com/articles/solar/california-solar-power-record-may" target="_blank" rel="noopener noreferrer" class="source-link">Canary Media</a></li>
+<li><a href="https://www.eia.gov/todayinenergy/detail.php?id=67784" target="_blank" rel="noopener noreferrer" class="source-link">U.S. EIA</a></li>
+    </ul>
+  </div>
+  <hr class="dashed">
+</article>
+
+<article class="story-article">
+  <p class="metabar">
+    <span class="metabar-item"><span>@CLIM8WINS</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>AUG 18, 2026</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>CLEANTECHNICA</span></span>
+  </p>
+  <h2 class="story-headline">UK&#x27;s East Anglia THREE Offshore Wind Farm Hits Major Construction Milestone</h2>
+  <div class="slide-row">
+<img src="Posts/2026-08-18/s24_slide1.png" alt="Slide 1 of 4: UK&#x27;s East Anglia THREE Offshore Wind Farm Hits Major Construction Milestone" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-18/s24_slide2.png" alt="Slide 2 of 4: UK&#x27;s East Anglia THREE Offshore Wind Farm Hits Major Construction Milestone" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-18/s24_slide3.png" alt="Slide 3 of 4: UK&#x27;s East Anglia THREE Offshore Wind Farm Hits Major Construction Milestone" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-18/s24_slide4.png" alt="Slide 4 of 4: UK&#x27;s East Anglia THREE Offshore Wind Farm Hits Major Construction Milestone" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+  </div>
+  <div class="sources-block">
+    <p class="sources-label">Sources</p>
+    <ul class="sources-ul">
+<li><a href="https://cleantechnica.com/2026/08/17/scottishpower-renewables-masdar-mark-major-engineering-milestone-at-east-anglia-three-windfarm/" target="_blank" rel="noopener noreferrer" class="source-link">CleanTechnica</a></li>
+<li><a href="https://www.offshorewind.biz/2026/08/17/all-foundations-in-at-east-anglia-three/" target="_blank" rel="noopener noreferrer" class="source-link">Offshore Wind Biz</a></li>
+    </ul>
+  </div>
+  <hr class="dashed">
+</article>
+
+<article class="story-article">
+  <p class="metabar">
+    <span class="metabar-item"><span>@CLIM8WINS</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>AUG 17, 2026</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>MINESTO (VIA PR NEWSWIRE)</span></span>
+  </p>
+  <h2 class="story-headline">Swedish Underwater Kite Breaks Tidal Energy Records Near the Faroe Islands</h2>
+  <div class="slide-row">
+<img src="Posts/2026-08-17/s23_slide1.png" alt="Slide 1 of 4: Swedish Underwater Kite Breaks Tidal Energy Records Near the Faroe Islands" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-17/s23_slide2.png" alt="Slide 2 of 4: Swedish Underwater Kite Breaks Tidal Energy Records Near the Faroe Islands" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-17/s23_slide3.png" alt="Slide 3 of 4: Swedish Underwater Kite Breaks Tidal Energy Records Near the Faroe Islands" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-17/s23_slide4.png" alt="Slide 4 of 4: Swedish Underwater Kite Breaks Tidal Energy Records Near the Faroe Islands" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+  </div>
+  <div class="sources-block">
+    <p class="sources-label">Sources</p>
+    <ul class="sources-ul">
+<li><a href="https://www.prnewswire.com/news-releases/project-update-on-minesto-dragons-in-the-faroe-islands-microgrid-scale-powerplant-dragon-4-in-electricity-production-302716205.html" target="_blank" rel="noopener noreferrer" class="source-link">Minesto (via PR Newswire)</a></li>
+<li><a href="https://www.offshore-energy.biz/dragon-roars-with-record-power-in-faroe-islands-minesto-hits-new-tidal-energy-output-milestone/" target="_blank" rel="noopener noreferrer" class="source-link">Offshore Energy</a></li>
+    </ul>
+  </div>
+  <hr class="dashed">
+</article>
+
+<article class="story-article">
+  <p class="metabar">
+    <span class="metabar-item"><span>@CLIM8WINS</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>AUG 16, 2026</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>OUTLOOK BUSINESS</span></span>
+  </p>
+  <h2 class="story-headline">India&#x27;s Industrial Transition Accelerator Backs 11 Clean Industry Projects Worth $18 Billion</h2>
+  <div class="slide-row">
+<img src="Posts/2026-08-16/s22_slide1.png" alt="Slide 1 of 4: India&#x27;s Industrial Transition Accelerator Backs 11 Clean Industry Projects Worth $18 Billion" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-16/s22_slide2.png" alt="Slide 2 of 4: India&#x27;s Industrial Transition Accelerator Backs 11 Clean Industry Projects Worth $18 Billion" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-16/s22_slide3.png" alt="Slide 3 of 4: India&#x27;s Industrial Transition Accelerator Backs 11 Clean Industry Projects Worth $18 Billion" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-16/s22_slide4.png" alt="Slide 4 of 4: India&#x27;s Industrial Transition Accelerator Backs 11 Clean Industry Projects Worth $18 Billion" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+  </div>
+  <div class="sources-block">
+    <p class="sources-label">Sources</p>
+    <ul class="sources-ul">
+<li><a href="https://www.outlookbusiness.com/amp/story/corporate/ita-backs-11-indian-projects-to-advance-over-18-bn-in-clean-industry-investment" target="_blank" rel="noopener noreferrer" class="source-link">Outlook Business</a></li>
+<li><a href="https://www.saurenergy.com/solar-energy-news/jindal-steel-jsw-steel-acme-renew-among-11-projects-backed-by-ita-for-18-bn-investment-12258801" target="_blank" rel="noopener noreferrer" class="source-link">Saur Energy</a></li>
+    </ul>
+  </div>
+  <hr class="dashed">
+</article>
+
+<article class="story-article">
+  <p class="metabar">
+    <span class="metabar-item"><span>@CLIM8WINS</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>AUG 15, 2026</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>HEART AEROSPACE (OFFICIAL NEWSROOM)</span></span>
+  </p>
+  <h2 class="story-headline">World&#x27;s Largest Electric Aircraft Makes History on $5 of Electricity</h2>
+  <div class="slide-row">
+<img src="Posts/2026-08-15/s21_slide1.png" alt="Slide 1 of 4: World&#x27;s Largest Electric Aircraft Makes History on $5 of Electricity" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-15/s21_slide2.png" alt="Slide 2 of 4: World&#x27;s Largest Electric Aircraft Makes History on $5 of Electricity" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-15/s21_slide3.png" alt="Slide 3 of 4: World&#x27;s Largest Electric Aircraft Makes History on $5 of Electricity" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-15/s21_slide4.png" alt="Slide 4 of 4: World&#x27;s Largest Electric Aircraft Makes History on $5 of Electricity" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+  </div>
+  <div class="sources-block">
+    <p class="sources-label">Sources</p>
+    <ul class="sources-ul">
+<li><a href="https://www.heartaerospace.com/newsroom/heart-aerospace-completes-first-flight-of-world-s-largest-electric-aircraft" target="_blank" rel="noopener noreferrer" class="source-link">Heart Aerospace (official newsroom)</a></li>
+<li><a href="https://newatlas.com/aircraft/worlds-largest-all-electric-plane-maiden-flight/" target="_blank" rel="noopener noreferrer" class="source-link">New Atlas</a></li>
+    </ul>
+  </div>
+  <hr class="dashed">
+</article>
+
+<article class="story-article">
+  <p class="metabar">
+    <span class="metabar-item"><span>@CLIM8WINS</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>AUG 14, 2026</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>EMBER (EUROPEAN ELECTRICITY REVIEW 2026)</span></span>
+  </p>
+  <h2 class="story-headline">Europe&#x27;s Wind and Solar On Track to Outpace Gas for the Longest Stretch on Record</h2>
+  <div class="slide-row">
+<img src="Posts/2026-08-14/s20_slide1.png" alt="Slide 1 of 4: Europe&#x27;s Wind and Solar On Track to Outpace Gas for the Longest Stretch on Record" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-14/s20_slide2.png" alt="Slide 2 of 4: Europe&#x27;s Wind and Solar On Track to Outpace Gas for the Longest Stretch on Record" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-14/s20_slide3.png" alt="Slide 3 of 4: Europe&#x27;s Wind and Solar On Track to Outpace Gas for the Longest Stretch on Record" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-14/s20_slide4.png" alt="Slide 4 of 4: Europe&#x27;s Wind and Solar On Track to Outpace Gas for the Longest Stretch on Record" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+  </div>
+  <div class="sources-block">
+    <p class="sources-label">Sources</p>
+    <ul class="sources-ul">
+<li><a href="https://ember-energy.org/latest-insights/european-electricity-review-2026/" target="_blank" rel="noopener noreferrer" class="source-link">Ember (European Electricity Review 2026)</a></li>
+<li><a href="https://www.euronews.com/2026/07/14/solar-generated-record-25-of-eu-power-in-june-with-germany-spain-and-poland-leading-the-ra" target="_blank" rel="noopener noreferrer" class="source-link">Euronews</a></li>
+    </ul>
+  </div>
+  <hr class="dashed">
+</article>
+
+<article class="story-article">
+  <p class="metabar">
+    <span class="metabar-item"><span>@CLIM8WINS</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>AUG 13, 2026</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>ECU NEWSROOM</span></span>
+  </p>
+  <h2 class="story-headline">Green Hydrogen Goldmine Found Under Western Australia</h2>
+  <div class="slide-row">
+<img src="Posts/2026-08-13/s19_slide1.png" alt="Slide 1 of 4: Green Hydrogen Goldmine Found Under Western Australia" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-13/s19_slide2.png" alt="Slide 2 of 4: Green Hydrogen Goldmine Found Under Western Australia" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-13/s19_slide3.png" alt="Slide 3 of 4: Green Hydrogen Goldmine Found Under Western Australia" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-13/s19_slide4.png" alt="Slide 4 of 4: Green Hydrogen Goldmine Found Under Western Australia" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+  </div>
+  <div class="sources-block">
+    <p class="sources-label">Sources</p>
+    <ul class="sources-ul">
+<li><a href="https://www.ecu.edu.au/newsroom/articles/research/green-hydrogen-goldmine-ecu-researchers-discover-hidden-energy-source" target="_blank" rel="noopener noreferrer" class="source-link">ECU Newsroom</a></li>
+<li><a href="https://www.eurekalert.org/news-releases/1139611" target="_blank" rel="noopener noreferrer" class="source-link">EurekAlert!</a></li>
+    </ul>
+  </div>
+  <hr class="dashed">
+</article>
+
+<article class="story-article">
+  <p class="metabar">
+    <span class="metabar-item"><span>@CLIM8WINS</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>AUG 12, 2026</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>GENESIS ENERGY (H1 FY26 RESULTS)</span></span>
+  </p>
+  <h2 class="story-headline">Renewables Surge Cuts Operating Emissions in Half at Major New Zealand Energy Company</h2>
+  <div class="slide-row">
+<img src="Posts/2026-08-12/s18_slide1.png" alt="Slide 1 of 4: Renewables Surge Cuts Operating Emissions in Half at Major New Zealand Energy Company" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-12/s18_slide2.png" alt="Slide 2 of 4: Renewables Surge Cuts Operating Emissions in Half at Major New Zealand Energy Company" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-12/s18_slide3.png" alt="Slide 3 of 4: Renewables Surge Cuts Operating Emissions in Half at Major New Zealand Energy Company" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-12/s18_slide4.png" alt="Slide 4 of 4: Renewables Surge Cuts Operating Emissions in Half at Major New Zealand Energy Company" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+  </div>
+  <div class="sources-block">
+    <p class="sources-label">Sources</p>
+    <ul class="sources-ul">
+<li><a href="https://media.genesisenergy.co.nz/genesis/investor/2026/h1_fy26_market_release_updated.pdf" target="_blank" rel="noopener noreferrer" class="source-link">Genesis Energy (H1 FY26 results)</a></li>
+<li><a href="https://www.mbie.govt.nz/about/news/renewable-generation-surges-as-solar-shines" target="_blank" rel="noopener noreferrer" class="source-link">MBIE (NZ Energy Quarterly, March 2026)</a></li>
+    </ul>
+  </div>
+  <hr class="dashed">
+</article>
+
+<article class="story-article">
+  <p class="metabar">
+    <span class="metabar-item"><span>@CLIM8WINS</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>AUG 11, 2026</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>KLSE SCREENER</span></span>
+  </p>
+  <h2 class="story-headline">Malaysia Launches NEEAP 2.0: A 10-Year Plan to Slash 26 Million Tonnes of CO2</h2>
+  <div class="slide-row">
+<img src="Posts/2026-08-11/s17_slide1.png" alt="Slide 1 of 4: Malaysia Launches NEEAP 2.0: A 10-Year Plan to Slash 26 Million Tonnes of CO2" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-11/s17_slide2.png" alt="Slide 2 of 4: Malaysia Launches NEEAP 2.0: A 10-Year Plan to Slash 26 Million Tonnes of CO2" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-11/s17_slide3.png" alt="Slide 3 of 4: Malaysia Launches NEEAP 2.0: A 10-Year Plan to Slash 26 Million Tonnes of CO2" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-11/s17_slide4.png" alt="Slide 4 of 4: Malaysia Launches NEEAP 2.0: A 10-Year Plan to Slash 26 Million Tonnes of CO2" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+  </div>
+  <div class="sources-block">
+    <p class="sources-label">Sources</p>
+    <ul class="sources-ul">
+<li><a href="https://www.klsescreener.com/v2/news/view/1771399/malaysia-renews-10-year-energy-plan-targeting-savings-of-around-us-21-5b" target="_blank" rel="noopener noreferrer" class="source-link">KLSE Screener</a></li>
+<li><a href="https://www.nst.com.my/business/economy/2026/08/1508567/malaysia-targets-rm852bil-energy-savings-2035-under-efficiency" target="_blank" rel="noopener noreferrer" class="source-link">New Straits Times</a></li>
+    </ul>
+  </div>
+  <hr class="dashed">
+</article>
+
+<article class="story-article">
+  <p class="metabar">
+    <span class="metabar-item"><span>@CLIM8WINS</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>AUG 10, 2026</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>YALE CLIMATE CONNECTIONS</span></span>
+  </p>
+  <h2 class="story-headline">New Mexico&#x27;s Electricity Grid Flips to Majority Renewables in Five Years</h2>
+  <div class="slide-row">
+<img src="Posts/2026-08-10/s16_slide1.png" alt="Slide 1 of 4: New Mexico&#x27;s Electricity Grid Flips to Majority Renewables in Five Years" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-10/s16_slide2.png" alt="Slide 2 of 4: New Mexico&#x27;s Electricity Grid Flips to Majority Renewables in Five Years" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-10/s16_slide3.png" alt="Slide 3 of 4: New Mexico&#x27;s Electricity Grid Flips to Majority Renewables in Five Years" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-10/s16_slide4.png" alt="Slide 4 of 4: New Mexico&#x27;s Electricity Grid Flips to Majority Renewables in Five Years" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+  </div>
+  <div class="sources-block">
+    <p class="sources-label">Sources</p>
+    <ul class="sources-ul">
+<li><a href="https://yaleclimateconnections.org/2026/08/the-state-thats-beating-dirty-electricity/" target="_blank" rel="noopener noreferrer" class="source-link">Yale Climate Connections</a></li>
+<li><a href="https://www.pnm.com/our-commitment" target="_blank" rel="noopener noreferrer" class="source-link">PNM</a></li>
+    </ul>
+  </div>
+  <hr class="dashed">
+</article>
+
+<article class="story-article">
+  <p class="metabar">
+    <span class="metabar-item"><span>@CLIM8WINS</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>AUG 9, 2026</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>MONGABAY</span></span>
+  </p>
+  <h2 class="story-headline">Amazon Deforestation Hits a 10-Year Low</h2>
+  <div class="slide-row">
+<img src="Posts/2026-08-09/s15_slide1.png" alt="Slide 1 of 4: Amazon Deforestation Hits a 10-Year Low" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-09/s15_slide2.png" alt="Slide 2 of 4: Amazon Deforestation Hits a 10-Year Low" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-09/s15_slide3.png" alt="Slide 3 of 4: Amazon Deforestation Hits a 10-Year Low" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-09/s15_slide4.png" alt="Slide 4 of 4: Amazon Deforestation Hits a 10-Year Low" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+  </div>
+  <div class="sources-block">
+    <p class="sources-label">Sources</p>
+    <ul class="sources-ul">
+<li><a href="https://news.mongabay.com/short-article/2026/07/amazon-deforestation-falls-to-10-year-low-in-first-half-of-2026/" target="_blank" rel="noopener noreferrer" class="source-link">Mongabay</a></li>
+<li><a href="https://www.aljazeera.com/news/2026/7/10/under-lula-amazon-deforestation-falls-to-lowest-level-in-a-decade" target="_blank" rel="noopener noreferrer" class="source-link">Al Jazeera</a></li>
+    </ul>
+  </div>
+  <hr class="dashed">
+</article>
+
+<article class="story-article">
+  <p class="metabar">
+    <span class="metabar-item"><span>@CLIM8WINS</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>AUG 8, 2026</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>SOLAR POWER PORTAL</span></span>
+  </p>
+  <h2 class="story-headline">UK&#x27;s Great British Energy Makes Its First-Ever Solar Investment</h2>
+  <div class="slide-row">
+<img src="Posts/2026-08-08/s14_slide1.png" alt="Slide 1 of 4: UK&#x27;s Great British Energy Makes Its First-Ever Solar Investment" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-08/s14_slide2.png" alt="Slide 2 of 4: UK&#x27;s Great British Energy Makes Its First-Ever Solar Investment" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-08/s14_slide3.png" alt="Slide 3 of 4: UK&#x27;s Great British Energy Makes Its First-Ever Solar Investment" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-08/s14_slide4.png" alt="Slide 4 of 4: UK&#x27;s Great British Energy Makes Its First-Ever Solar Investment" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+  </div>
+  <div class="sources-block">
+    <p class="sources-label">Sources</p>
+    <ul class="sources-ul">
+<li><a href="https://www.solarpowerportal.co.uk/solar-thermal/great-british-energy-invests-7-5-million-in-uk-solar-supply-chain" target="_blank" rel="noopener noreferrer" class="source-link">Solar Power Portal</a></li>
+<li><a href="https://www.energylivenews.com/2026/08/06/great-british-energy-invests-8-million-in-solar-firm/" target="_blank" rel="noopener noreferrer" class="source-link">Energy Live News</a></li>
+    </ul>
+  </div>
+  <hr class="dashed">
+</article>
+
+<article class="story-article">
+  <p class="metabar">
+    <span class="metabar-item"><span>@CLIM8WINS</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>AUG 7, 2026</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>CARBON BRIEF</span></span>
+  </p>
+  <h2 class="story-headline">China&#x27;s Coal Falls Below 50% of Electricity for the First Time Ever</h2>
+  <div class="slide-row">
+<img src="Posts/2026-08-07/s13_slide1.png" alt="Slide 1 of 4: China&#x27;s Coal Falls Below 50% of Electricity for the First Time Ever" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-07/s13_slide2.png" alt="Slide 2 of 4: China&#x27;s Coal Falls Below 50% of Electricity for the First Time Ever" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-07/s13_slide3.png" alt="Slide 3 of 4: China&#x27;s Coal Falls Below 50% of Electricity for the First Time Ever" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-07/s13_slide4.png" alt="Slide 4 of 4: China&#x27;s Coal Falls Below 50% of Electricity for the First Time Ever" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+  </div>
+  <div class="sources-block">
+    <p class="sources-label">Sources</p>
+    <ul class="sources-ul">
+<li><a href="https://www.carbonbrief.org/china-briefing-6-august-2026-five-year-climate-plan-overcapacity-report-severe-heatwave" target="_blank" rel="noopener noreferrer" class="source-link">Carbon Brief</a></li>
+<li><a href="https://english.www.gov.cn/archive/statistics/202607/30/content_WS6a6b131ac6d00ca5f9a0c7c4.html" target="_blank" rel="noopener noreferrer" class="source-link">NEA (via China gov.cn)</a></li>
+    </ul>
+  </div>
+  <hr class="dashed">
+</article>
+
+<article class="story-article">
+  <p class="metabar">
+    <span class="metabar-item"><span>@CLIM8WINS</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>AUG 6, 2026</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>REUTERS (VIA U.S. NEWS)</span></span>
+  </p>
+  <h2 class="story-headline">U.S. Appeals Court Blocks EPA From Canceling $20 Billion in Clean Energy Grants</h2>
+  <div class="slide-row">
+<img src="Posts/2026-08-06/s12_slide1.png" alt="Slide 1 of 4: U.S. Appeals Court Blocks EPA From Canceling $20 Billion in Clean Energy Grants" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-06/s12_slide2.png" alt="Slide 2 of 4: U.S. Appeals Court Blocks EPA From Canceling $20 Billion in Clean Energy Grants" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-06/s12_slide3.png" alt="Slide 3 of 4: U.S. Appeals Court Blocks EPA From Canceling $20 Billion in Clean Energy Grants" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-06/s12_slide4.png" alt="Slide 4 of 4: U.S. Appeals Court Blocks EPA From Canceling $20 Billion in Clean Energy Grants" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+  </div>
+  <div class="sources-block">
+    <p class="sources-label">Sources</p>
+    <ul class="sources-ul">
+<li><a href="https://www.usnews.com/news/top-news/articles/2026-08-04/epa-cannot-block-billions-in-climate-grants-us-appeals-court-rules" target="_blank" rel="noopener noreferrer" class="source-link">Reuters (via U.S. News)</a></li>
+<li><a href="https://news.bloomberglaw.com/environment-and-energy/trumps-claw-back-of-climate-grants-frozen-by-full-dc-circuit" target="_blank" rel="noopener noreferrer" class="source-link">Bloomberg Law</a></li>
+    </ul>
+  </div>
+  <hr class="dashed">
+</article>
+
+<article class="story-article">
+  <p class="metabar">
+    <span class="metabar-item"><span>@CLIM8WINS</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>AUG 5, 2026</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>RWE</span></span>
+  </p>
+  <h2 class="story-headline">Europe&#x27;s Largest Green Hydrogen Plant Delivers First Industrial Fuel via Pipeline</h2>
+  <div class="slide-row">
+<img src="Posts/2026-08-05/s11_slide1.png" alt="Slide 1 of 4: Europe&#x27;s Largest Green Hydrogen Plant Delivers First Industrial Fuel via Pipeline" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-05/s11_slide2.png" alt="Slide 2 of 4: Europe&#x27;s Largest Green Hydrogen Plant Delivers First Industrial Fuel via Pipeline" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-05/s11_slide3.png" alt="Slide 3 of 4: Europe&#x27;s Largest Green Hydrogen Plant Delivers First Industrial Fuel via Pipeline" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-05/s11_slide4.png" alt="Slide 4 of 4: Europe&#x27;s Largest Green Hydrogen Plant Delivers First Industrial Fuel via Pipeline" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+  </div>
+  <div class="sources-block">
+    <p class="sources-label">Sources</p>
+    <ul class="sources-ul">
+<li><a href="https://www.rwe.com/en/press/rwe-generation/2026-08-04-get-h2-nukleus-gains-momentum/" target="_blank" rel="noopener noreferrer" class="source-link">RWE</a></li>
+<li><a href="https://fuelcellsworks.com/2026/08/04/green-hydrogen/first-green-hydrogen-from-rwe-s-300mw-lingen-project-flows-to-ruhr-industry" target="_blank" rel="noopener noreferrer" class="source-link">Fuel Cells Works</a></li>
+    </ul>
+  </div>
+  <hr class="dashed">
+</article>
+
+<article class="story-article">
+  <p class="metabar">
+    <span class="metabar-item"><span>@CLIM8WINS</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>AUG 4, 2026</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>WINDINSIDER</span></span>
+  </p>
+  <h2 class="story-headline">Spain&#x27;s Basque Country Builds Its First Wind Farm in 20 Years</h2>
+  <div class="slide-row">
+<img src="Posts/2026-08-04/s10_slide1.png" alt="Slide 1 of 4: Spain&#x27;s Basque Country Builds Its First Wind Farm in 20 Years" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-04/s10_slide2.png" alt="Slide 2 of 4: Spain&#x27;s Basque Country Builds Its First Wind Farm in 20 Years" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-04/s10_slide3.png" alt="Slide 3 of 4: Spain&#x27;s Basque Country Builds Its First Wind Farm in 20 Years" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-04/s10_slide4.png" alt="Slide 4 of 4: Spain&#x27;s Basque Country Builds Its First Wind Farm in 20 Years" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+  </div>
+  <div class="sources-block">
+    <p class="sources-label">Sources</p>
+    <ul class="sources-ul">
+<li><a href="https://windinsider.com/2026/07/29/iberdrola-espana-basque-energy-agency-secure-e29-million-eib-green-loan-for-40-mw-labraza-wind-farm/" target="_blank" rel="noopener noreferrer" class="source-link">WindInsider</a></li>
+<li><a href="https://www.pressdigital.es/articulo/economia/2026-07-30/5970832-llegan-primeras-palas-aerogeneradores-parque-eolico-labraza-alava" target="_blank" rel="noopener noreferrer" class="source-link">Press Digital</a></li>
+    </ul>
+  </div>
+  <hr class="dashed">
+</article>
+
+<article class="story-article">
+  <p class="metabar">
+    <span class="metabar-item"><span>@CLIM8WINS</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>AUG 3, 2026</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>IRENA</span></span>
+  </p>
+  <h2 class="story-headline">Renewables Just Had Their Best Year Ever</h2>
+  <div class="slide-row">
+<img src="Posts/2026-08-03/s9_slide1.png" alt="Slide 1 of 4: Renewables Just Had Their Best Year Ever" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-03/s9_slide2.png" alt="Slide 2 of 4: Renewables Just Had Their Best Year Ever" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-03/s9_slide3.png" alt="Slide 3 of 4: Renewables Just Had Their Best Year Ever" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-03/s9_slide4.png" alt="Slide 4 of 4: Renewables Just Had Their Best Year Ever" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+  </div>
+  <div class="sources-block">
+    <p class="sources-label">Sources</p>
+    <ul class="sources-ul">
+<li><a href="https://www.irena.org/News/pressreleases/2026/Jul/Renewable-Power-Generation-Records-Its-Fastest-Growth-Ever" target="_blank" rel="noopener noreferrer" class="source-link">IRENA</a></li>
+<li><a href="https://cleantechnica.com/2026/07/14/fastest-renewable-energy-growth-ever/" target="_blank" rel="noopener noreferrer" class="source-link">CleanTechnica</a></li>
+    </ul>
+  </div>
+  <hr class="dashed">
+</article>
+
+<article class="story-article">
+  <p class="metabar">
+    <span class="metabar-item"><span>@CLIM8WINS</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>AUG 2, 2026</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>POSITIVE NEWS</span></span>
+  </p>
+  <h2 class="story-headline">Finland&#x27;s Sand Battery Ended a Town&#x27;s Oil Heating</h2>
+  <div class="slide-row">
+<img src="Posts/2026-08-02/s8_slide1.png" alt="Slide 1 of 4: Finland&#x27;s Sand Battery Ended a Town&#x27;s Oil Heating" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-02/s8_slide2.png" alt="Slide 2 of 4: Finland&#x27;s Sand Battery Ended a Town&#x27;s Oil Heating" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-02/s8_slide3.png" alt="Slide 3 of 4: Finland&#x27;s Sand Battery Ended a Town&#x27;s Oil Heating" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-02/s8_slide4.png" alt="Slide 4 of 4: Finland&#x27;s Sand Battery Ended a Town&#x27;s Oil Heating" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+  </div>
+  <div class="sources-block">
+    <p class="sources-label">Sources</p>
+    <ul class="sources-ul">
+<li><a href="https://www.positive.news/society/good-news-stories-from-week-31-of-2026/" target="_blank" rel="noopener noreferrer" class="source-link">Positive News</a></li>
+<li><a href="https://polarnightenergy.fi/sand-battery" target="_blank" rel="noopener noreferrer" class="source-link">Polar Night Energy</a></li>
+    </ul>
+  </div>
+  <hr class="dashed">
+</article>
+
+<article class="story-article">
+  <p class="metabar">
+    <span class="metabar-item"><span>@CLIM8WINS</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>AUG 1, 2026</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>PV TECH</span></span>
+  </p>
+  <h2 class="story-headline">Australia&#x27;s Grid Prices Crash 47% as Renewables Hit Record Share</h2>
+  <div class="slide-row">
+<img src="Posts/2026-08-01/s7_slide1.png" alt="Slide 1 of 4: Australia&#x27;s Grid Prices Crash 47% as Renewables Hit Record Share" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-01/s7_slide2.png" alt="Slide 2 of 4: Australia&#x27;s Grid Prices Crash 47% as Renewables Hit Record Share" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-01/s7_slide3.png" alt="Slide 3 of 4: Australia&#x27;s Grid Prices Crash 47% as Renewables Hit Record Share" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-08-01/s7_slide4.png" alt="Slide 4 of 4: Australia&#x27;s Grid Prices Crash 47% as Renewables Hit Record Share" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+  </div>
+  <div class="sources-block">
+    <p class="sources-label">Sources</p>
+    <ul class="sources-ul">
+<li><a href="https://www.pv-tech.org/australias-nem-hits-42-renewables-share-in-q2-2026-as-wholesale-prices-fall-to-six-year-low/" target="_blank" rel="noopener noreferrer" class="source-link">PV Tech</a></li>
+<li><a href="https://www.aemo.com.au/-/media/files/major-publications/qed/2026/qed-q2-2026.pdf" target="_blank" rel="noopener noreferrer" class="source-link">AEMO Quarterly Energy Dynamics</a></li>
+    </ul>
+  </div>
+  <hr class="dashed">
+</article>
+
+<article class="story-article">
+  <p class="metabar">
+    <span class="metabar-item"><span>@CLIM8WINS</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>JUL 31, 2026</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>OFFSHORE WIND</span></span>
+  </p>
+  <h2 class="story-headline">South Korea Locks in 3.2 GW of Offshore Wind</h2>
+  <div class="slide-row">
+<img src="Posts/2026-07-31/s6_slide1.png" alt="Slide 1 of 4: South Korea Locks in 3.2 GW of Offshore Wind" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-07-31/s6_slide2.png" alt="Slide 2 of 4: South Korea Locks in 3.2 GW of Offshore Wind" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-07-31/s6_slide3.png" alt="Slide 3 of 4: South Korea Locks in 3.2 GW of Offshore Wind" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-07-31/s6_slide4.png" alt="Slide 4 of 4: South Korea Locks in 3.2 GW of Offshore Wind" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+  </div>
+  <div class="sources-block">
+    <p class="sources-label">Sources</p>
+    <ul class="sources-ul">
+<li><a href="https://www.offshorewind.biz/2026/07/09/south-korean-supply-chain-players-tapped-for-3-2-gw-offshore-wind-project/" target="_blank" rel="noopener noreferrer" class="source-link">Offshore Wind</a></li>
+<li><a href="https://www.marketscale.com/industries/energy/renewable-energy-roundup-offshore-supply-chains-storage-deals-and-output-records-define-july-16" target="_blank" rel="noopener noreferrer" class="source-link">MarketScale</a></li>
+    </ul>
+  </div>
+  <hr class="dashed">
+</article>
+
+<article class="story-article">
+  <p class="metabar">
+    <span class="metabar-item"><span>@CLIM8WINS</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>JUL 30, 2026</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>CARBON BRIEF</span></span>
+  </p>
+  <h2 class="story-headline">China Sets New Climate Targets for 2030</h2>
+  <div class="slide-row">
+<img src="Posts/2026-07-30/s5_slide1.png" alt="Slide 1 of 4: China Sets New Climate Targets for 2030" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-07-30/s5_slide2.png" alt="Slide 2 of 4: China Sets New Climate Targets for 2030" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-07-30/s5_slide3.png" alt="Slide 3 of 4: China Sets New Climate Targets for 2030" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-07-30/s5_slide4.png" alt="Slide 4 of 4: China Sets New Climate Targets for 2030" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+  </div>
+  <div class="sources-block">
+    <p class="sources-label">Sources</p>
+    <ul class="sources-ul">
+<li><a href="https://www.carbonbrief.org/qa-what-does-chinas-15th-five-year-plan-mean-for-climate-change" target="_blank" rel="noopener noreferrer" class="source-link">Carbon Brief</a></li>
+<li><a href="http://english.scio.gov.cn/pressroom/2026-07/29/content_118624122.html" target="_blank" rel="noopener noreferrer" class="source-link">China&#x27;s State Council Information Office</a></li>
+    </ul>
+  </div>
+  <hr class="dashed">
+</article>
+
+<article class="story-article">
+  <p class="metabar">
+    <span class="metabar-item"><span>@CLIM8WINS</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>JUL 29, 2026</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>AMERICAN CLEAN POWER ASSOCIATION</span></span>
+  </p>
+  <h2 class="story-headline">US Clean Energy Saved the Grid $170 Million During Heatwave</h2>
+  <div class="slide-row">
+<img src="Posts/2026-07-29/s4_slide1.png" alt="Slide 1 of 4: US Clean Energy Saved the Grid $170 Million During Heatwave" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-07-29/s4_slide2.png" alt="Slide 2 of 4: US Clean Energy Saved the Grid $170 Million During Heatwave" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-07-29/s4_slide3.png" alt="Slide 3 of 4: US Clean Energy Saved the Grid $170 Million During Heatwave" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-07-29/s4_slide4.png" alt="Slide 4 of 4: US Clean Energy Saved the Grid $170 Million During Heatwave" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+  </div>
+  <div class="sources-block">
+    <p class="sources-label">Sources</p>
+    <ul class="sources-ul">
+<li><a href="https://cleanpower.org/resources/clean-power-heatwaves-july-2026/" target="_blank" rel="noopener noreferrer" class="source-link">American Clean Power Association</a></li>
+<li><a href="https://www.electricchoice.com/blog/pjm-emergency-order-heat-wave-2026/" target="_blank" rel="noopener noreferrer" class="source-link">Electric Choice</a></li>
+    </ul>
+  </div>
+  <hr class="dashed">
+</article>
+
+<article class="story-article">
+  <p class="metabar">
+    <span class="metabar-item"><span>@CLIM8WINS</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>JUL 28, 2026</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>TULANE UNIVERSITY</span></span>
+  </p>
+  <h2 class="story-headline">Global Mangrove Forests Reach a Turning Point</h2>
+  <div class="slide-row">
+<img src="Posts/2026-07-28/s3_slide1.png" alt="Slide 1 of 4: Global Mangrove Forests Reach a Turning Point" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-07-28/s3_slide2.png" alt="Slide 2 of 4: Global Mangrove Forests Reach a Turning Point" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-07-28/s3_slide3.png" alt="Slide 3 of 4: Global Mangrove Forests Reach a Turning Point" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-07-28/s3_slide4.png" alt="Slide 4 of 4: Global Mangrove Forests Reach a Turning Point" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+  </div>
+  <div class="sources-block">
+    <p class="sources-label">Sources</p>
+    <ul class="sources-ul">
+<li><a href="https://news.tulane.edu/pr/global-mangrove-forests-rebound-offering-hopeful-sign-climate-and-coastal-resilience" target="_blank" rel="noopener noreferrer" class="source-link">Tulane University</a></li>
+<li><a href="https://phys.org/news/2026-06-global-mangrove-forests-rebound-climate.html" target="_blank" rel="noopener noreferrer" class="source-link">Phys.org</a></li>
+    </ul>
+  </div>
+  <hr class="dashed">
+</article>
+
+<article class="story-article">
+  <p class="metabar">
+    <span class="metabar-item"><span>@CLIM8WINS</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>JUL 27, 2026</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>ELECTREK (VIA EIA DATA)</span></span>
+  </p>
+  <h2 class="story-headline">US Solar Outgenerates Coal and Wind for the First Time</h2>
+  <div class="slide-row">
+<img src="Posts/2026-07-27/s2_slide1.png" alt="Slide 1 of 4: US Solar Outgenerates Coal and Wind for the First Time" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-07-27/s2_slide2.png" alt="Slide 2 of 4: US Solar Outgenerates Coal and Wind for the First Time" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-07-27/s2_slide3.png" alt="Slide 3 of 4: US Solar Outgenerates Coal and Wind for the First Time" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-07-27/s2_slide4.png" alt="Slide 4 of 4: US Solar Outgenerates Coal and Wind for the First Time" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+  </div>
+  <div class="sources-block">
+    <p class="sources-label">Sources</p>
+    <ul class="sources-ul">
+<li><a href="https://electrek.co/2026/07/24/solar-generated-more-electricity-than-coal-and-wind-may-eia-data/" target="_blank" rel="noopener noreferrer" class="source-link">Electrek (via EIA data)</a></li>
+    </ul>
+  </div>
+  <hr class="dashed">
+</article>
+
+<article class="story-article">
+  <p class="metabar">
+    <span class="metabar-item"><span>@CLIM8WINS</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>JUL 26, 2026</span></span>
+    <span class="metabar-item"><span aria-hidden="true" class="dot">·</span><span>THE COOL DOWN</span></span>
+  </p>
+  <h2 class="story-headline">Brazil&#x27;s Atlantic Forest Hits Record-Low Deforestation</h2>
+  <div class="slide-row">
+<img src="Posts/2026-07-26/s1_slide1.png" alt="Slide 1 of 4: Brazil&#x27;s Atlantic Forest Hits Record-Low Deforestation" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-07-26/s1_slide2.png" alt="Slide 2 of 4: Brazil&#x27;s Atlantic Forest Hits Record-Low Deforestation" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-07-26/s1_slide3.png" alt="Slide 3 of 4: Brazil&#x27;s Atlantic Forest Hits Record-Low Deforestation" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+<img src="Posts/2026-07-26/s1_slide4.png" alt="Slide 4 of 4: Brazil&#x27;s Atlantic Forest Hits Record-Low Deforestation" loading="lazy" width="1080" height="1440" class="slide-img" style="aspect-ratio:3 / 4">
+  </div>
+  <div class="sources-block">
+    <p class="sources-label">Sources</p>
+    <ul class="sources-ul">
+<li><a href="https://www.thecooldown.com/outdoors/atlantic-forest-conservation-win-monitoring/" target="_blank" rel="noopener noreferrer" class="source-link">The Cool Down</a></li>
+    </ul>
+  </div>
+  <hr class="dashed">
+</article>
+</main>
+
+</body>
+</html>

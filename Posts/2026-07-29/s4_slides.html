@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>s4 slides</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Quicksand:wght@600;700&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --spring:#82EC5F; --alpine:#4C9C82; --canopy:#33421F; --solar:#F4B92D; --mist:#C9EAD3; --paper:#F7FBF4; --sage:#5E6E56;
+    --gradient-horizon: linear-gradient(180deg, #C9EAD3 0%, #4C9C82 55%, #33421F 100%);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #1a1a1a; padding: 40px; display: flex; flex-direction: column; gap: 40px; align-items: flex-start; }
+  .slide { width: 1080px; height: 1440px; position: relative; overflow: hidden; background: var(--paper); font-family: 'Inter', sans-serif; }
+
+  .metabar { position: relative; z-index: 2; display: flex; align-items: center; gap: 14px; padding: 40px 56px 0; font-family: 'IBM Plex Mono', monospace; font-size: 20px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--canopy); }
+  .metabar.on-dark { color: var(--paper); }
+  .metabar .sep { opacity: 0.45; }
+  .sunburst { width: 40px; height: 40px; flex-shrink: 0; }
+
+  .wordmark { font-family: 'Quicksand', sans-serif; font-weight: 700; letter-spacing: 0.03em; }
+
+  .dashed-rule { border: none; border-top: 3px dashed var(--canopy); margin: 32px 56px; }
+  .dashed-rule.on-dark { border-top-color: var(--paper); opacity: 0.5; }
+
+  .barcode-corner { position: absolute; top: 40px; right: 56px; z-index: 2; display: flex; align-items: center; gap: 10px; }
+  .barcode-corner svg { height: 36px; }
+  .barcode-corner .ref { font-family: 'IBM Plex Mono', monospace; font-size: 16px; color: var(--sage); letter-spacing: 0.05em; }
+
+  .label-chip { display: inline-block; background: var(--mist); color: var(--canopy); font-family: 'IBM Plex Mono', monospace; font-size: 20px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.14em; padding: 10px 24px; border-radius: 999px; margin: 32px 56px 0; }
+  .label-chip.on-dark { background: var(--paper); }
+
+  .headline { font-family: 'Quicksand', sans-serif; font-weight: 700; font-size: 64px; line-height: 1.08; color: var(--canopy); margin: 24px 56px; }
+  .headline.reversed { color: var(--paper); }
+
+  .body-copy { font-family: 'Inter', sans-serif; font-weight: 400; font-size: 30px; line-height: 1.6; color: var(--canopy); margin: 0 56px 32px; }
+  .body-copy.reversed { color: var(--paper); }
+  .body-copy ul { padding-left: 34px; }
+  .body-copy li { margin-bottom: 12px; }
+  .body-copy li::marker { color: var(--alpine); }
+
+  .card { margin: 0 56px; overflow: hidden; background: #fff; box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+  .card img { width: 100%; display: block; }
+
+  .sunburst-meter { display: flex; align-items: center; gap: 24px; margin: 8px 56px 32px; }
+  .sunburst-meter .stat { font-family: 'Archivo Black', sans-serif; font-size: 96px; color: var(--solar); line-height: 1; }
+  .sunburst-meter .caption { font-family: 'IBM Plex Mono', monospace; font-size: 20px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--sage); max-width: 380px; }
+
+  .footer-caption { position: absolute; bottom: 40px; left: 56px; right: 56px; z-index: 2; display: flex; justify-content: space-between; align-items: center; font-family: 'IBM Plex Mono', monospace; font-size: 20px; color: var(--sage); }
+  .footer-caption.reversed { color: var(--paper); opacity: 0.9; }
+
+  .source-block { background: var(--mist); margin: 0 56px; padding: 20px 24px; }
+  .source-block .source-label { font-family: 'IBM Plex Mono', monospace; font-size: 14px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--canopy); opacity: 0.6; margin-bottom: 10px; }
+  .source-block .source-entry { font-family: 'IBM Plex Mono', monospace; font-size: 18px; color: var(--canopy); line-height: 1.7; word-break: break-all; }
+  .source-block .source-entry .url { color: var(--alpine); }
+
+  /* Slide 1 — Cover */
+  .slide-cover .photo { position: absolute; inset: 0; }
+  .slide-cover .photo img { width: 100%; height: 100%; object-fit: cover; }
+  .slide-cover .scrim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(51,66,31,0) 0%, rgba(51,66,31,0.1) 45%, rgba(51,66,31,0.92) 100%); }
+  .slide-cover .content { position: absolute; inset: 0; z-index: 2; display: flex; flex-direction: column; justify-content: space-between; }
+
+  /* Slide 4 — CTA (horizon panel) */
+  .slide-cta { background: var(--gradient-horizon); display: flex; flex-direction: column; justify-content: center; }
+  .slide-cta .metabar { padding-top: 0; margin: 0 0 0; position: absolute; top: 40px; left: 56px; }
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1 — COVER -->
+<div class="slide slide-cover" id="slide1">
+  <div class="photo"><img src="s4_slide1-image.png" alt=""></div>
+  <div class="scrim"></div>
+  <div class="content">
+    <div class="metabar on-dark">
+      <svg class="sunburst" viewBox="0 0 100 100" data-sunburst data-tone="paper"></svg>
+      <span>@clim8wins</span><span class="sep">—</span><span>Jul 29, 2026</span><span class="sep">—</span><span>ACP</span>
+    </div>
+    <div>
+      <hr class="dashed-rule on-dark">
+      <p class="headline reversed">US clean energy saved the grid $170 million.</p>
+      <div class="footer-caption reversed" style="position: static; margin: 0 56px 40px;">
+        <span class="wordmark">Clim8Wins</span>
+        <span>United States</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 2 — THE UPDATE -->
+<div class="slide" id="slide2">
+  <div class="metabar">
+    <svg class="sunburst" viewBox="0 0 100 100" data-sunburst data-tone="canopy"></svg>
+    <span>@clim8wins</span><span class="sep">—</span><span>Jul 29, 2026</span>
+  </div>
+  <div class="barcode-corner"><svg data-barcode></svg><span class="ref">s4-0729</span></div>
+  <p class="label-chip">THE UPDATE</p>
+  <p class="headline">US grid saved $170 million during heatwave.</p>
+  <p class="body-copy">During July 2026's record heatwave, wind and solar generation actually increased during the highest-demand hours — helping save the grid more than $170 million in wholesale electricity costs, according to the American Clean Power Association. The same analysis found that 74 GW of solar, wind, and battery storage projects already waiting to connect to four major grid operators would have delivered even more savings and prevented modeled reliability shortfalls, had they been online in time.</p>
+  <hr class="dashed-rule">
+  <div class="source-block">
+    <p class="source-label">Sources</p>
+    <p class="source-entry">American Clean Power Association — <span class="url">cleanpower.org/resources/clean-power-heatwaves-july-2026</span></p>
+    <p class="source-entry">Electric Choice — <span class="url">electricchoice.com/blog/pjm-emergency-order-heat-wave-2026</span></p>
+  </div>
+</div>
+
+<!-- SLIDE 3 — WHY IT MATTERS -->
+<div class="slide" id="slide3">
+  <div class="metabar">
+    <svg class="sunburst" viewBox="0 0 100 100" data-sunburst data-tone="canopy"></svg>
+    <span>@clim8wins</span><span class="sep">—</span><span>Jul 29, 2026</span>
+  </div>
+  <div class="barcode-corner"><svg data-barcode></svg><span class="ref">s4-0729</span></div>
+  <p class="label-chip">WHY IT MATTERS</p>
+  <p class="headline">The grid needs its backlog connected faster.</p>
+  <div class="body-copy">
+    <ul>
+      <li>$170M+ in wholesale savings during just one heatwave, from clean power already online</li>
+      <li>74 GW of solar, wind, and battery projects are stuck in interconnection queues nationwide</li>
+      <li>Connecting them faster would cut costs and prevent reliability shortfalls in future extreme heat</li>
+    </ul>
+  </div>
+  <hr class="dashed-rule">
+  <div class="card"><img src="s4_slide3-image.png" alt="Supporting image"></div>
+</div>
+
+<!-- SLIDE 4 — FOLLOW FOR MORE -->
+<div class="slide slide-cta" id="slide4">
+  <div class="metabar on-dark">
+    <svg class="sunburst" viewBox="0 0 100 100" data-sunburst data-tone="paper"></svg>
+    <span class="wordmark">Clim8Wins</span>
+  </div>
+  <p class="label-chip on-dark">FOLLOW FOR MORE</p>
+  <p class="body-copy reversed" style="font-family:'Quicksand',sans-serif; font-weight:700; font-size:48px; margin-top: 40px;">→ @clim8wins</p>
+  <p class="body-copy reversed">$170 million saved — and counting.</p>
+  <p class="body-copy reversed">Don't forget to like and follow Clim8Wins, for your dose of daily climate optimism!</p>
+</div>
+
+<script>
+  function drawSunburst(svg, tone) {
+    const color = tone === 'paper' ? '#F7FBF4' : '#33421F';
+    const n = 16, cx = 50, cy = 50, rInner = 22, rOuter = 34;
+    let html = `<circle cx="${cx}" cy="${cy}" r="14" fill="none" stroke="${color}" stroke-width="4"/>`;
+    for (let i = 0; i < n; i++) {
+      const a = (i / n) * Math.PI * 2;
+      const x1 = cx + rInner * Math.cos(a), y1 = cy + rInner * Math.sin(a);
+      const x2 = cx + rOuter * Math.cos(a), y2 = cy + rOuter * Math.sin(a);
+      html += `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${color}" stroke-width="4" stroke-linecap="round"/>`;
+    }
+    svg.innerHTML = html;
+  }
+  function drawSunburstMeter(svg, fraction) {
+    const n = 24, cx = 60, cy = 60, rInner = 30, rOuter = 52;
+    const filled = Math.round(n * fraction);
+    let html = `<circle cx="${cx}" cy="${cy}" r="20" fill="none" stroke="#33421F" stroke-width="3"/>`;
+    for (let i = 0; i < n; i++) {
+      const a = (i / n) * Math.PI * 2 - Math.PI / 2;
+      const x1 = cx + rInner * Math.cos(a), y1 = cy + rInner * Math.sin(a);
+      const x2 = cx + rOuter * Math.cos(a), y2 = cy + rOuter * Math.sin(a);
+      const color = i < filled ? (i % 3 === 0 ? '#F4B92D' : '#82EC5F') : '#C9EAD3';
+      html += `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${color}" stroke-width="5" stroke-linecap="round"/>`;
+    }
+    svg.innerHTML = html;
+  }
+  function drawBarcode(svg) {
+    let x = 0, html = '';
+    for (let i = 0; i < 14; i++) {
+      const w = [2, 4, 3, 6][i % 4];
+      html += `<rect x="${x}" y="0" width="${w}" height="36" fill="#33421F"/>`;
+      x += w + 3;
+    }
+    svg.setAttribute('viewBox', `0 0 ${x} 36`);
+    svg.setAttribute('width', x);
+    svg.innerHTML = html;
+  }
+  document.querySelectorAll('[data-sunburst]').forEach(svg => drawSunburst(svg, svg.dataset.tone));
+  document.querySelectorAll('[data-sunburst-meter]').forEach(svg => drawSunburstMeter(svg, parseFloat(svg.dataset.fraction)));
+  document.querySelectorAll('[data-barcode]').forEach(drawBarcode);
+</script>
+</body>
+</html>
