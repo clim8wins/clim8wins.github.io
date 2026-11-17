@@ -1,0 +1,10 @@
+pv magazine reported on November 6 that a 60 MW / 600 MWh liquid-air energy storage plant at Golmud in Qinghai, China, was connected to the grid and began generating on October 30. Built by China Green Development Investment Group with the Chinese Academy of Sciences, it stores surplus renewable power by chilling air to about −194 °C and turning it back into electricity for up to 10 hours, and its developer calls it the world's largest grid-connected plant of its kind. The developer expects about 180 GWh a year and says it can absorb about 600 MWh of surplus renewable power a day, but those are estimates, the "largest" claim is the developer's own, the reports state no efficiency or cost, and it has been connected for under three weeks. Still, long-duration storage to keep clean power flowing is a step for the climate, once it proves itself.
+
+Sources:
+pv magazine (Nov 6) — https://www.pv-magazine.com/2026/11/06/worlds-largest-liquid-air-storage-facility-comes-online-in-china/
+SolarQuarter (Nov 11) — https://solarquarter.com/2026/11/11/china-connects-worlds-largest-60-mw-liquid-air-energy-storage-plant-to-grid/
+ESS News (Dec 30, 2025) — https://www.ess-news.com/2025/12/30/china-powers-up-worlds-largest-liquid-air-storage-project/
+
+Photos: cover by Paora / Wikimedia Commons (CC0), Kōwhai Park Solar Farm near Christchurch, New Zealand, taken in November 2026; slide 3 by Ellen Whisk / Wikimedia Commons (CC BY-SA 4.0), a commercial battery energy storage system, location not stated, taken in March 2026. Both are generic images, not the Golmud plant.
+
+#Clim8Wins #ClimateOptimism #CleanEnergy #EnergyStorage #China
