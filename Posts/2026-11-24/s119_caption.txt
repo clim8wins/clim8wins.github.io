@@ -1,0 +1,9 @@
+China has connected Yuanchu No. 1, a 300 MW / 1,800 MWh compressed air energy storage plant in Jiuquan, Gansu, to the grid, China Energy Engineering Corporation announced on November 16. It uses surplus power to compress air into four rock caverns about 110 m underground, then releases the air to drive turbines for up to six hours, and the company says it is the world's first 300 MW artificial-cavern plant of its kind. The developer reports 72% round-trip efficiency, a projected 600 million kWh a year and a cost of about 2.5 billion yuan (about US$350 million, per China Electric Power News). The caveats: those figures come from the developer's announcement and aren't independently confirmed, CGTN and Global Times both relay that one announcement, the reports say grid-connected rather than commercially operating, and storage only moves clean power in time rather than making it. Still, long-duration storage for wind and solar is a step for the climate, if it runs as reported and is charged by clean power.
+
+Sources:
+CGTN (Nov 16) — https://news.cgtn.com/news/2026-11-16/First-300-MW-artificial-cavern-CAES-station-operational-1S7JZ9OQo24/p.html
+Global Times (Nov 16) — https://www.globaltimes.cn/page/202611/1374385.shtml
+
+Photos: cover by EricDiao / Wikimedia Commons (CC BY-SA 3.0), a wind turbine in Gansu, taken in August 2013; slide 3 by Popolon / Wikimedia Commons (CC BY-SA 3.0), a wind farm at Guazhou, Gansu, taken in May 2013. Both are generic images of Gansu wind power, not the storage plant.
+
+#Clim8Wins #ClimateOptimism #EnergyStorage #CleanEnergy #CompressedAirEnergy
