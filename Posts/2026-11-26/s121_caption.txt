@@ -1,0 +1,9 @@
+MIT and Georgia Tech researchers have modelled what happens when renewables supply 80% of US customers' electricity: in cost-effective systems, solar and wind could produce as much as 10% more than the grid could immediately use or store, often in stretches of seven to 12 hours. They suggest putting that spare power to work in things like electric arc furnace steelmaking, grinding raw materials, seasonal fertiliser and concrete, and flexible AI training, which could potentially cut some costs. The caveats: it's a model of a future grid, the costs of the equipment to use the surplus haven't been studied, running processes only part of the time is harder, this account comes from MIT's own news office, and the journal paper couldn't be opened. Still, finding uses for spare clean power is a step for the climate, though so far only in a computer model.
+
+Sources:
+MIT News (Nov 24) — https://news.mit.edu/2026/excess-renewable-energy-could-power-new-industrial-processes-1124
+Joule paper — https://www.sciencedirect.com/science/article/abs/pii/S2542435126003673
+
+Photos: cover by Dennis Schroeder, U.S. Department of Energy / Wikimedia Commons (public domain), solar panels and a wind turbine at the National Wind Technology Center in Colorado, taken in October 2019; slide 3 by Uddeholms AB / Wikimedia Commons (public domain), an illustration of an electric arc furnace, dated 2011. Both are generic images, not part of the study.
+
+#Clim8Wins #ClimateOptimism #RenewableEnergy #CleanEnergy #GreenIndustry
